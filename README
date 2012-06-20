@@ -1,0 +1,4 @@
+IN THIS PROJECT:
+Sqlite3Helper will use ObjectParser
+In ObjectParser,it can parse a any of object to a dictionary and parse any of dictionary to a object.
+
