@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "sqlite3.h"
 //---------------------------------------------------------------------------------------------
 
 #define INSERT                  @"INSERT"
@@ -69,4 +69,10 @@
         byType:(int)type 
     fromObject:(id)obj;
 
++(void)makeSql:(NSMutableString *)sql 
+         atKey:(NSString *)key;
+
++(void)makeSqlite3Stmt:(sqlite3_stmt * )stmt 
+             forValues:(NSArray *)values
+             valueType:(NSArray *)valueType;
 @end
