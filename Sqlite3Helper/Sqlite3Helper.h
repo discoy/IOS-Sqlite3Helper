@@ -10,11 +10,15 @@
 #import "sqlite3.h"
 #import "DataBaseUtils.h"
 
+static id obj;
+
 @interface Sqlite3Helper : NSObject{
 
   
     
 }
+//初始化锁对象
++(void)initLockObject;
 
 //打开数据库
 +(sqlite3 *)open:(NSString *)dataBasePath; //数据库文件目录
